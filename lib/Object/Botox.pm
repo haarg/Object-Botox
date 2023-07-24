@@ -125,7 +125,7 @@ new() method by default
 =cut
 
 use constant 1.01;
-use MRO::Compat qw( get_linear_isa ); # mro::* interface compatibility for Perls < 5.9.5
+use MRO::Compat;
 use autouse 'Carp' => qw( croak carp );
 
 my ( $create_accessor, $prototyping, $setup, $pre_set );
